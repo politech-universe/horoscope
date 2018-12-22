@@ -1,0 +1,75 @@
+<resources>
+    <integer name="com_vk_sdk_AppId">6776661</integer>
+
+    <string name="app_name">Horoscope</string>
+    <string name="title_activity_sign_in">Sign in</string>
+    <!-- VK required strings -->
+    <!-- Strings related to login -->
+    <string name="app_name_locale">Гороскоп</string>
+    <string name="enter_name">Имя</string>
+    <string name="missing_name">Введите имя</string>
+    <string name="enter_date">Дата</string>
+    <string name="missing_date">Введите дату</string>
+    <string name="vk_but_text">Vk</string>
+    <string name="cont_but_text">Продолжить</string>
+    <!-- Strings related to horoscope -->
+    <string name="missing_resource">Ресурс недоступен</string>
+    <string name="cur_name">Имя пользователя</string>
+    <string name="missing_prediction">Ошибка</string>
+    <string name="horoscope_but_text">ГОРОСКОП</string>
+    <string name="slipper_but_text">СОННИК</string>
+
+    <string name="yesterday">на вчера</string>
+    <string name="today">на сегодня</string>
+    <string name="tomorrow">на завтра</string>
+    <string name="weekly">на неделю</string>
+    <string name="monthly">на месяц</string>
+    <string name="year">на год</string>
+
+    <string-array name="timelist">
+        <item>@string/yesterday</item>
+        <item>@string/today</item>
+        <item>@string/tomorrow</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+        <item>@string/year</item>
+    </string-array>
+
+    <!-- Strings Signs -->
+    <string name="name_aries">Овен</string>
+    <string name="name_taurus">Телец</string>
+    <string name="name_gemini">Близнецы</string>
+    <string name="name_cancer">Рак</string>
+    <string name="name_leo">Лев</string>
+    <string name="name_virgo">Дева</string>
+    <string name="name_libra">Весы</string>
+    <string name="name_scorpio">Скорпион</string>
+    <string name="name_sagittarius">Стрелец</string>
+    <string name="name_capricorn">Козерог</string>
+    <string name="name_aquarius">Водолей</string>
+    <string name="name_pisces">Рыбы</string>
+
+    <string name="aries">aries</string>
+    <string name="taurus">taurus</string>
+    <string name="gemini">gemini</string>
+    <string name="cancer">cancer</string>
+    <string name="leo">leo</string>
+    <string name="virgo">virgo</string>
+    <string name="libra">libra</string>
+    <string name="scorpio">scorpio</string>
+    <string name="sagittarius">sagittarius</string>
+    <string name="capricorn">capricorn</string>
+    <string name="aquarius">aquarius</string>
+    <string name="pisces">pisces</string>
+    <!-- Strings related to slipper -->
+    <string name="enter_word">Введите слово</string>
+    <string name="slipper">Сонник</string>
+
+    <!-- String resource names -->
+    <string name="res_rambler">https://m.horoscopes.rambler.ru</string>
+    <string name="res_rambler_slipper">https://m.horoscopes.rambler.ru/dreams</string>
+    <string name="text_rambler_slipper">Взято с сайта &lt;a href=https://m.horoscopes.rambler.ru/dreams&lt;/a>rambler.ru&lt;/a></string>
+    <string name="text_rambler">Взято с сайта &lt;a href=https://m.horoscopes.rambler.ru>rambler.ru&lt;/a></string>
+
+
+</resources>

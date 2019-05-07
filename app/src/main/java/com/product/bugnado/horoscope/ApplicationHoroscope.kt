@@ -2,7 +2,6 @@ package com.product.bugnado.horoscope
 
 import android.app.Application
 import android.content.res.Configuration
-import android.widget.Toast
 import com.vk.sdk.VKSdk
 
 class ApplicationHoroscope : Application() {

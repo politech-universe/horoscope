@@ -9,7 +9,6 @@ class Zodiac {
     companion object {
         fun getSignByDate(date: String?): String {
             var arr = date?.split(".")
-            var s = HashMap<String,String>()
             return zodiacSign(arr!![0].toInt(), arr!![1].toInt())
         }
 

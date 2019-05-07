@@ -27,11 +27,20 @@ class Dreamer : AppCompatActivity() {
     lateinit var search: SearchView
     lateinit var source: TextView
 
+    fun setDreamRequest(req: String){
+        dreamRequest = req
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resident_slipper)
-        date = intent.getStringExtra("DATE")
-        name = intent.getStringExtra("NAME")
+        try {
+            date = intent.getStringExtra("DATE")
+            name = intent.getStringExtra("NAME")
+        }catch (e:Exception){
+            date = "10.10.2010"
+            name = "Vadim"
+        }
         search = findViewById(R.id.text_search)
         search.queryHint = getString(R.string.enter_word)
         url = getString(R.string.res_rambler_slipper)
@@ -69,7 +78,7 @@ class Dreamer : AppCompatActivity() {
     internal inner class DreamsAsyncRequest : AsyncTask<String, Int, String>() {
         lateinit var title: String
         override fun doInBackground(vararg arg: String): String {
-            var doc: Document? = null
+            var doc: Document?
             try {
                 doc = Jsoup.connect("$url/?book=-1&words=$dreamRequest").get()
             } catch (e: IOException) {
@@ -77,7 +86,7 @@ class Dreamer : AppCompatActivity() {
             }
             title = if (doc != null) {
                 var lst: Elements = doc.getElementsByClass("_359q")
-                var txt: String = ""
+                var txt = ""
                 for (i in lst) {
                     txt += "<h2>" + i.getElementsByTag("h2").text() + "</h2>" +
                             "<p><i>" + i.getElementsByClass("_2Sj1").text().capitalize() + "</i></p>" +

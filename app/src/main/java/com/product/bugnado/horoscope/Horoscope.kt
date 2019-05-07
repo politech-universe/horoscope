@@ -45,8 +45,13 @@ class Horoscope : AppCompatActivity() {
 
         url = getString(R.string.res_rambler)
 
-        date = intent.getStringExtra("DATE")
-        name = intent.getStringExtra("NAME")
+        try {
+            date = intent.getStringExtra("DATE")
+            name = intent.getStringExtra("NAME")
+        }catch (e: java.lang.Exception){
+            date = "10.10.2010"
+            name = "Vadim"
+        }
 
         curSign = Zodiac.getSignByDate(date)
         textSign.text = getString(Zodiac.getSignId(curSign))

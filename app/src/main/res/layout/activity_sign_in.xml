@@ -105,7 +105,8 @@
                 android:background="@color/colorPrimary"
                 android:onClick="onClickVK"
                 android:text="@string/vk_but_text"
-                android:textColor="@color/vk_grey_color"
+
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp" />
 
             <Space

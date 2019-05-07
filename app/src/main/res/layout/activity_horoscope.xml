@@ -62,7 +62,8 @@
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
             android:text="@string/horoscope_but_text"
-            android:textColor="@color/vk_grey_color"
+
+            android:textColor="@color/colorPrimary"
             android:textSize="24sp" />
 
         <Button
@@ -73,7 +74,8 @@
             android:background="@color/colorPrimary"
             android:onClick="onClickSlipper"
             android:text="@string/slipper_but_text"
-            android:textColor="@color/vk_grey_color"
+
+            android:textColor="@color/colorPrimary"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -129,7 +131,7 @@
                     android:layout_marginTop="8dp"
                     android:clickable="true"
                     android:textColor="@color/Text"
-                    android:textColorLink="@color/vk_share_link_title_color" />
+                    android:textColorLink="@color/colorPrimary" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
